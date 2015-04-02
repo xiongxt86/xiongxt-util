@@ -1,5 +1,5 @@
 package core;
 
-public class  XpathUtil {
+public class XpathUtil {
 
 }
