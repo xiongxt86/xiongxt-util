@@ -3,7 +3,7 @@
   <groupId>com.xiongxt</groupId>
   <artifactId>util</artifactId>
   <!-- <version>0.0.1-SNAPSHOT</version> -->
-  <version>0.0.1</version>
+  <version>0.0.2</version>
   <name>general-util</name>
   <description>工具包</description>
   <packaging>jar</packaging>
