@@ -4,6 +4,8 @@ import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.util.Arrays;
 
+import lang.WeiXinConstant;
+
 /** 
  * 请求校验工具类 
  *  
@@ -11,8 +13,6 @@ import java.util.Arrays;
  * @date 2013-05-18 
  */  
 public class SignUtil {  
-    // 与接口配置信息中的Token要一致  
-    private static String token = "a906910";  
   
     /** 
      * 验证签名 
@@ -23,7 +23,7 @@ public class SignUtil {
      * @return 
      */  
     public static boolean checkSignature(String signature, String timestamp, String nonce) {  
-        String[] arr = new String[] { token, timestamp, nonce };  
+        String[] arr = new String[] { WeiXinConstant.TOKEN, timestamp, nonce };  
         // 将token、timestamp、nonce三个参数进行字典序排序  
         Arrays.sort(arr);  
         StringBuilder content = new StringBuilder();  
